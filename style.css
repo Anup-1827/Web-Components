@@ -1,0 +1,17 @@
+h1{
+    color: red;
+}
+
+h2{
+    color: blue;
+}
+
+ul{
+    font-size: 20px;
+}
+
+
+::part(outlineStyling){
+    font-weight: bold;
+    font-size: 30px;
+}
