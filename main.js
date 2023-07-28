@@ -12,4 +12,23 @@ document.addEventListener('DOMContentLoaded', ()=>{
             propAttrWebCom.setAttribute('color', "red")
         }
     })
+
+
+    const behavAttrWebComp = document.querySelector('behav-events');
+    behavAttrWebComp.addEventListener('click', ()=>{
+        const character = behavAttrWebComp.getAttribute('character');
+        if(character === "Iron Man"){
+            behavAttrWebComp.setAttribute('character', "Captain America")
+            behavAttrWebComp.setAttribute('color', "navy")
+        }
+        else{
+            behavAttrWebComp.setAttribute('character', "Iron Man")
+            behavAttrWebComp.setAttribute('color', "red")
+        }
+    })
 })
+
+
+function hello(){
+    console.log("Hello Function is getting called");
+}

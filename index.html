@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Components</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js"></script>
     <script type="module" src="./customCom.js"></script>
     <script type="module" src="./propertiesAndAttributes.js"></script>
-</head>
-<body>
+    <script type="module" src="./behaviourAndEvents.js"></script>
+  </head>
+  <body>
     <h1>Web Component</h1>
     <h2>Below is the content of the Custom Component</h2>
-    
+
     <article>
-        <big-bang>
-            <h2 slot="title">Big Bang Theory</h2>
-            <h3 slot="char">Characters</h3>
-            <ul slot="charList">
-                <li>Char1</li>
-                <li>Char2</li>
-                <li>Char3</li>
-                <li>Char4</li>
-            </ul>
-        </big-bang>
+      <big-bang>
+        <h2 slot="title">Big Bang Theory</h2>
+        <h3 slot="char">Characters</h3>
+        <ul slot="charList">
+          <li>Char1</li>
+          <li>Char2</li>
+          <li>Char3</li>
+          <li>Char4</li>
+        </ul>
+      </big-bang>
     </article>
 
-
     <section>
-        <prop-attr character="Iron Man" color="red">
-            <h2 slot="desc">Let's Start</h2>
-        </prop-attr>
+      <prop-attr character="Iron Man" color="red">
+        <h2 slot="desc">Let's Start</h2>
+      </prop-attr>
     </section>
-</body>
+
+    <main>
+      <behav-events color="orangered" character="Iron Man"  action="hello">
+        <!-- <span slot="done">OK</span> -->  <!-- If the Slot is not present then the Event is added to remove from the Web Comp-->
+        <span slot="done">OK</span> 
+      </behav-events>
+    </main>
+  </body>
 </html>
